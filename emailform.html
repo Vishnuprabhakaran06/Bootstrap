@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="form.css">
+  <script src="https://kit.fontawesome.com/68a315aa0c.js" crossorigin="anonymous"></script>
+  <!-- <script src="form.js"></script> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="myform">
+    <form  action="https://api.web3forms.com/submit" method="POST" name="registerForm">
+      <h1>Create Account</h1>
+      <input type="hidden" name="access_key" value="6cb10f48-1eb6-4306-8f0f-b5620aa5f1b0">
+      <div class="user">
+        <label for="uname"><i id="u" class="fa-solid fa-user fa-fade fa-xs"></i>Username</label><br>
+        <input type="text" id="uname" name="uname" placeholder="Enter Your Username">
+        <span name="error" id="nameerror"></span><br><br>
+      </div>
+
+      <div class="mobile">
+        <label for="pno"><i id="m" class="fa-solid fa-phone fa-fade fa-xs"></i>Mobile Number</label><br>
+        <input type="text" id="pno" name="pno" placeholder="Enter Your Mobile Number">
+        <span name="error" id="pnoerror"></span><br><br>
+      </div>
+
+      <div class="email">
+        <label for="email"><i id="e" class="fa-regular fa-envelope fa-fade fa-xs"></i>Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email">
+        <span name="error" id="emailerror"></span><br><br>
+      </div>
+
+      <div class="password">
+        <label for="pass"><i id="p" class="fa-solid fa-key fa-fade fa-xs"></i>Password</label><br>
+        <input type="password" id="pass" name="pass" placeholder="Enter Your Password">
+        <span name="error" id="passerror"></span><br><br>
+      </div>
+
+      <div class="confirmpass">
+        <label for="cpass"><i id="p" class="fa-solid fa-key fa-fade fa-xs"></i>Confirm Password</label><br>
+        <input type="password" id="cpass" name="cpass" placeholder="Confirm Your Password">
+        <span name="error" id="cpasserror"></span><br><br>
+      </div>
+
+      <br>
+      <div class="login">
+       
+        <button id="log" type="submit">Sign Up</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- <script>
+    function validateForm(event) {
+      event.preventDefault();  // Prevents the form from submitting traditionally
+
+      var uname = document.getElementById('uname').value;
+      var pno = document.getElementById('pno').value;
+      var email = document.getElementById('email').value;
+      var pass = document.getElementById('pass').value;
+      var cpass = document.getElementById('cpass').value;
+
+      // Reset error messages
+      document.getElementById('nameerror').innerText = '';
+      document.getElementById('pnoerror').innerText = '';
+      document.getElementById('emailerror').innerText = '';
+      document.getElementById('passerror').innerText = '';
+      document.getElementById('cpasserror').innerText = '';
+
+      // Validation checks
+      var isValid = true;
+
+      if (uname == '') {
+        document.getElementById('nameerror').innerText = 'Username is required';
+        isValid = false;
+      }
+
+      if (pno == '') {
+        document.getElementById('pnoerror').innerText = 'Mobile number is required';
+        isValid = false;
+      }
+
+      if (email == '') {
+        document.getElementById('emailerror').innerText = 'Email is required';
+        isValid = false;
+      }
+
+      if (pass == '') {
+        document.getElementById('passerror').innerText = 'Password is required';
+        isValid = false;
+      }
+
+      if (cpass == '') {
+        document.getElementById('cpasserror').innerText = 'Please confirm your password';
+        isValid = false;
+      }
+
+      if (pass !== cpass) {
+        document.getElementById('cpasserror').innerText = 'Passwords do not match';
+        isValid = false;
+      }
+
+      if (isValid) {
+        // Redirect to index.html if validation passes
+        window.location.href = "index.html";
+      }
+
+      return false;  // Prevent the form from submitting
+    }
+  </script> -->
+</body>
+</html>

@@ -1,0 +1,171 @@
+body{
+background-image: url(carousel3.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 134px;
+
+  
+}
+
+
+.myform{
+    /* background-image: radial-gradient( rgb(174, 235, 105),rgb(236, 157, 29)); */
+    margin-top: 60px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    padding-top: 50px;    
+    padding-bottom: 50px;
+   padding-left: 50px;
+   padding-right:50px ;
+}  
+h1{
+    color: white;
+    font-family: "Josefin Sans", serif;
+
+}
+
+.user{
+    padding-left: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: "Josefin Sans", serif;
+}
+#uname{
+    border:  2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#u{
+    padding-right: 10px;
+}
+#nameerror{
+    font-size: 15px;
+    color: white;
+    font-family: "Lato", serif; 
+}
+
+
+
+.mobile{
+    padding-left: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: "Josefin Sans", serif;
+
+}
+#pno{
+    border:  2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+#m{
+    padding-right: 10px;
+
+}
+#pnoerror{
+    font-size: 15px;
+    color: white;
+    font-family: "Lato", serif;
+}
+
+
+
+.email{
+    padding-left: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: "Josefin Sans", serif;
+
+}
+#email{
+    border:  2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+#e{
+    padding-right: 10px;
+
+}
+#emailerror{
+    font-size: 15px;
+    color: white;
+    font-family: "Lato", serif;
+}
+
+
+
+.password{
+    padding-left: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: "Josefin Sans", serif;
+
+}
+#pass{
+    border:  2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+#p{
+    padding-right: 10px;
+
+}
+#passerror{
+    font-size: 15px;
+    color: white;
+    font-family: "Lato", serif;
+}
+
+
+.confirmpass{
+    padding-left: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: "Josefin Sans", serif;
+}
+#cpass{
+    border:  2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+#cpasserror{
+    font-size: 15px;
+    color: white;
+    font-family: "Lato", serif;
+}
+
+
+
+
+/* #forgot-pass{
+    color: white;
+    padding-left: 100px;
+    text-decoration: none;
+} */
+
+button{
+    
+    margin-left: 70px;
+}
+button:hover{
+
+ color: white;
+    background-color: rgb(248, 143, 64);
+}
+
+#log{
+ 
+    font-size:15px;
+    border:  2px solid white;
+    border-radius: 200px;
+    width: 100px;
+    padding: 5px;
+    font-family: "Josefin Sans", serif;
+}
