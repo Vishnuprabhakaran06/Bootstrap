@@ -14,7 +14,7 @@
 </head>
 <body>
   <div class="myform">
-    <form onsubmit="return validateForm(event)" name="registerForm">
+    <form onsubmit="return validateForm(event)" action="https://api.web3forms.com/submit" name="registerForm">
       <h1>Create Account</h1>
 
       <div class="user">
@@ -55,8 +55,9 @@
   </div>
 
   <script>
+    
     function validateForm(event) {
-      event.preventDefault();  // Prevents the form from submitting traditionally
+      event.preventDefault(); 
 
       var uname = document.getElementById('uname').value;
       var pno = document.getElementById('pno').value;
@@ -64,14 +65,12 @@
       var pass = document.getElementById('pass').value;
       var cpass = document.getElementById('cpass').value;
 
-      // Reset error messages
       document.getElementById('nameerror').innerText = '';
       document.getElementById('pnoerror').innerText = '';
       document.getElementById('emailerror').innerText = '';
       document.getElementById('passerror').innerText = '';
       document.getElementById('cpasserror').innerText = '';
 
-      // Validation checks
       var isValid = true;
 
       if (uname == '') {
@@ -105,11 +104,10 @@
       }
 
       if (isValid) {
-        // Redirect to index.html if validation passes
         window.location.href = "index.html";
       }
 
-      return false;  // Prevent the form from submitting
+      return false;  
     }
   </script>
 </body>

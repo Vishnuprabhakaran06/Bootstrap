@@ -13,6 +13,8 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/68a315aa0c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 
 
@@ -382,7 +384,7 @@
           <div class="col-md-6 col-12" style="background-color: white;" id="form2">
             <br><br>
             <h2> ASK A QUESTION !</h2>
-            <form method="POST" action="contact.php" >
+            <form method="POST" action="contact.php">
               <input type="hidden" name="access_key" value="cff82bf2-3cba-4fe1-92cd-3f5e5d78ddaa">
               <div class="form-floating mb-3 mt-5 ">
                 <input type="text" class="form-control" name="Name" id="floatingInputGroup1" placeholder="Username" required>
@@ -401,7 +403,7 @@
                 <span name="error" id="commenterror"></span>
               </div>
               <div class="form-floating  mb-3" id="formbutclass">
-                <button id="formbut" type="submit" class="btn btn-success btn-lg">SEND
+                <button id="formbut" type="submit" class="btn btn-success btn-lg" onclick="message()">SEND
                   MESSAGE</button>
               </div>
           
